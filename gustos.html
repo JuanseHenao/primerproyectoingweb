@@ -10,11 +10,12 @@
     class="text-yellow-600 text-2xl"
     style="background-color: rgb(1, 22, 41)"
   >
+    <!-- Navigation bar -->
+
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <!-- Navigation bar -->
 
     <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
       <div
@@ -60,7 +61,7 @@
               >Resumen</a
             >
             <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 text-gray-900 focus:text-gray-900 bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="./gustos.html"
               >Gustos</a
             >
@@ -69,112 +70,96 @@
               href="./conocimientos.html"
               >Conocimiento</a
             >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="./futuro.html"
-              >Futuro</a
-            >
           </nav>
         </div>
       </div>
     </div>
     <!-- End of Navigation bar -->
     <!-- Start of Content -->
-    <div class="flex flex-wrap">
-      <div class="p-8">
-        <h1 class="text-3xl">Resumen</h1>
-        <h2 class="text-white">
-          <span class="font-bold">Nombre:</span> Juan Sebastián Henao
+    <!-- Card 1 -->
+    <div class="lg:grid lg:grid-cols-2">
+      <div class="py-24 px-10 lg:px-0 max-w-3xl lg:max-w-md mx-auto">
+        <h2 class="text-4xl tracking-tight font-extrabold text-gray-100">
+          <span class="block">Fútbol</span>
         </h2>
-        <h2 class="text-white">
-          <span class="font-bold">Nacimiento:</span> 16 de abril de 2001,
-          Medellín
-        </h2>
-        <h2 class="text-white"><span class="font-bold">Edad:</span> 20 años</h2>
+        <p class="text-gray-300 mt-16">
+          Soy muy aficionado al fútbol, sobre todo a Atlético Nacional, al cual
+          intento ir a los partidos que puedo. Y aficionado al FC Barcelona.
+        </p>
       </div>
-      <div class="p-8">
-        <h1 class="text-3xl">Actualidad</h1>
-        <h2 class="text-white">
-          <span class="font-bold">Estudio:</span> Ingenieria de Sistemas y
-          Computación
+      <div class="lg:relative lg:mt-16">
+        <img
+          class="lg:absolute lg:inset-0 h-60 w-full lg:h-full object-cover object-center lg:rounded-l-md"
+          src="./img/nacional.jpeg"
+          alt="Woman workcation on the beach"
+        />
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="lg:grid lg:grid-cols-2">
+      <div class="lg:relative lg:mt-16">
+        <img
+          class="lg:absolute lg:inset-0 h-60 w-full lg:h-full object-cover object-center lg:rounded-r-md"
+          src="https://cdn.andro4all.com/files/2021/07/Apps-ver-Formula-1.jpg"
+          alt="Woman workcation on the beach"
+        />
+      </div>
+      <div class="py-24 px-10 lg:px-0 max-w-3xl lg:max-w-md mx-auto">
+        <h2 class="text-4xl tracking-tight font-extrabold text-gray-100">
+          <span class="block">Fórmula 1</span>
         </h2>
-        <h2 class="text-white">
-          <span class="font-bold">Universidad:</span> Universidad EIA
+        <p class="text-gray-300 my-16">
+          Desde hace algunos años sigo la fórmula 1 y es un deporte que me gusta
+          mucho y me parece muy entretenido y emocionante.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="lg:grid lg:grid-cols-2">
+      <div class="py-24 px-10 lg:px-0 max-w-3xl lg:max-w-md mx-auto">
+        <h2 class="text-4xl tracking-tight font-extrabold text-gray-100">
+          <span class="block">Música</span>
         </h2>
-        <h2 class="text-white">
-          <span class="font-bold">Trabajo:</span> Web Developer (OPALYTICA)
+        <p class="text-gray-300 mt-16">
+          Me gusta mucho escuchar música, y considero que escucho de todo, pero
+          los géneros que más escucho son:
+        </p>
+        <ul class="text-white my-4">
+          <li>- Reguetón</li>
+          <li>- Electrónica</li>
+        </ul>
+      </div>
+      <div class="lg:relative lg:mt-16">
+        <img
+          class="lg:absolute lg:inset-0 h-60 w-full lg:h-full object-cover object-center lg:rounded-l-md"
+          src="https://i.ytimg.com/vi/MglnNn_rB3I/maxresdefault.jpg"
+          alt="Woman workcation on the beach"
+        />
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="lg:grid lg:grid-cols-2 mb-10">
+      <div class="lg:relative lg:mt-16">
+        <img
+          class="lg:absolute lg:inset-0 h-60 w-full lg:h-full object-cover object-center lg:rounded-r-md"
+          src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2017/10/06/DCD33831-2DBA-4D4E-8619-492079EE2BAD/98.jpg?crop=1920,1080,x0,y200&width=1900&height=1069&optimize=high&format=webply"
+          alt="Woman workcation on the beach"
+        />
+      </div>
+      <div class="py-24 px-10 lg:px-0 max-w-3xl lg:max-w-md mx-auto">
+        <h2 class="text-4xl tracking-tight font-extrabold text-gray-100">
+          <span class="block">Videojuegos</span>
         </h2>
+        <p class="text-gray-300 mt-5">
+          Una de las cosas que mas me gusta hacer en mis tiempos libres es jugar
+          videojuegos, sobre todo con amigos, tanto juegos de estrategia, como
+          de combate, como de supervivencia.
+        </p>
       </div>
     </div>
     <!-- End of Content -->
-    <!-- Start of contact footer -->
-    <footer>
-      <div class="py-4 text-white">
-        <div class="container mx-auto flex flex-col md:flex-row my-12 md:my-36">
-          <div class="flex flex-col w-full lg:w-2/5 p-8 bg-white rounded-xl">
-            <p
-              class="text-3xl md:text-5xl text-yellow-500 my-4 leading-relaxed md:leading-snug"
-            >
-              Información de contacto
-            </p>
-            <p class="font-sans text-sm md:text-lg my-2 md:my-4 text-black">
-              <svg
-                class="inline-block fill-current mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
-                />
-              </svg>
-              Medellín, Colombia
-            </p>
-            <p class="font-sans text-sm md:text-lg my-2 md:my-4 text-black">
-              <svg
-                class="inline-block fill-current mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"
-                />
-              </svg>
-              juanse41601@gmail.com
-            </p>
-            <p class="font-sans text-sm md:text-lg my-2 md:my-4 text-black">
-              <svg
-                class="inline-block fill-current mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
-                />
-              </svg>
-              315 812 5800
-            </p>
-          </div>
-          <div class="flex flex-col lg:w-3/5 justify-center w-full lg:-mt-12">
-            <div class="container">
-              <div class="relative flex flex-col min-w-0 break-words w-full">
-                <div class="flex-auto p-5 lg:p-10">
-                  <img
-                    src="https://user-images.githubusercontent.com/54521023/152731049-cc744a56-1d6f-4945-9566-0fa3b7ad1d24.png"
-                    alt="contact image"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End of contact footer -->
   </body>
 </html>
